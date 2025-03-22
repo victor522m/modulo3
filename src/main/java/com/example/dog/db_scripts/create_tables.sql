@@ -25,3 +25,5 @@ CREATE TABLE `employed` (
   FOREIGN KEY (`dog_name`) REFERENCES `owners`(`id`),
   FOREIGN KEY (`id_user`) REFERENCES `users`(`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/**/

@@ -20,3 +20,6 @@ VALUES
 (5, 3, 'mjones', TRUE, 1),     -- El perro con ID 5 está empleado por el usuario con ID 3 (veterinario)
 (1, 2, 'asmith', FALSE, 1);    -- El perro con ID 1 está empleado por el usuario con ID 2 (veterinario)
 
+
+
+/**/
