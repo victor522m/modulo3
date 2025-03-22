@@ -2,25 +2,30 @@ package com.example.dog.entity;
 
 
 public class Dog {
-    private Long id;
+    private int id;
     private String name;
     private String breed;
 
     // Constructores
     public Dog() {}
 
-    public Dog(Long id, String name, String breed) {
+    public Dog(int id, String name, String breed) {
         this.id = id;
         this.name = name;
         this.breed = breed;
     }
+    public Dog( String name, String breed) {
+        this.name = name;
+        this.breed = breed;
+    }
+
 
     // Getters y Setters
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -8,6 +8,7 @@ import com.example.dog.entity.Dog;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
@@ -16,7 +17,7 @@ public class DogRestController {
     
 
     private final List<Dog> dogs = new ArrayList<>();  
-    private final AtomicLong counter = new AtomicLong(1); 
+    private final AtomicInteger counter = new AtomicInteger(1); 
     
     public DogRestController() {
         // Inicializando la lista con 10 perros predefinidos
