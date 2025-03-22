@@ -20,6 +20,7 @@ public class DogRestController {
     
     public DogRestController() {
         // Inicializando la lista con 10 perros predefinidos
+        dogs.add(new Dog(counter.getAndIncrement(), "Aquiles", "French Bulldog"));
         dogs.add(new Dog(counter.getAndIncrement(), "Buddy", "Golden Retriever"));
         dogs.add(new Dog(counter.getAndIncrement(), "Bella", "Labrador"));
         dogs.add(new Dog(counter.getAndIncrement(), "Charlie", "Poodle"));
@@ -39,7 +40,7 @@ public class DogRestController {
 
     @PostMapping
     public Dog addDog(@RequestBody Dog dog) {
-        dog.setId(counter.getAndIncrement()); // Generar un ID único
+        dog.setId(counter.getAndIncrement());  
         dogs.add(dog);
         return dog;
     }
